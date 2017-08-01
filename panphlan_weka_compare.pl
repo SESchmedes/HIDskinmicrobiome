@@ -80,7 +80,7 @@ if (system("python hclust2.py -i $pilepath/$bodysite/$bodysite\_$species\_gene_p
 print "hclust2.py complete for $bodysite\n";
 
 if (! -f "$pilepath/$bodysite/$bodysite\_$species\_pangenePA_fv.arff") {
-    if (system(" Rscript /home/sarah/src/panphlanOUT_to_fv_arff.R -bodysite $bodysite -clade $species")) {
+    if (system(" Rscript /home/sarah/src/panphlanOUT_to_fv_arff.R -bodysite $bodysite -clade $species -output $pilepath")) {
 	die "Error while trying to run R file to make arff\n";
     }
 }
