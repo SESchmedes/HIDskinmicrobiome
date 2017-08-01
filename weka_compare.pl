@@ -131,7 +131,7 @@ close(FV);
 
 if (! -f "$pilepath/$bodysite\_markerND_fv_gteq$threshold\.arff") {
 #Run R script to create .arff
-    if(system("Rscript /home/sarah/src/markerND_fv_to_arff.R --bodysite $bodysite --threshold $threshold")) {
+    if(system("Rscript /home/sarah/src/markerND_fv_to_arff.R --bodysite $bodysite --threshold $threshold --inputpath $pilepath")) {
 	die "Error executing rscript to create .arff file\n";
     }
 }
