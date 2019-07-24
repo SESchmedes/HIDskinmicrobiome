@@ -1,11 +1,9 @@
 # HIDskinmicrobiome
 
-Documentation for scripts and analysis from Schmedes et. al 2017, (AEM, under review)
+Documentation for scripts and analysis from Schmedes, S.E., Woerner, A.E., and Budowle, B. (2017) Forensic human identification using skin microbiomes. Appl Environ Microbiol 83(22):e01672-17
 using data from Oh et al., Cell, 2016 for shotgun metagenomic analyses
 
-The scripts provided were used in Schmedes et al. 2017; however, I am in the process of putting together a more formal pipeline for others to use. Please be patient!
-
-In the meantime, please direct any questions/comments to sarahschmedes@gmail.com.
+Please direct any questions/comments to sarahschmedes@gmail.com.
 
 ## General Workflow
 
@@ -37,5 +35,4 @@ samplename(@SRS) .
 Uses 1 argument, an array of SRSids. If only element is in the array a scalar will be returned with the associated samplename (HV01_Bodysite_Timepoint) . 
 If the array has more than 1 element a hash will be returned. Keys=SRSid, values=samplename . 
 
-To be continued....
 
